@@ -64,6 +64,8 @@ namespace MyTypographer
                 richTextBox2.Text = text;
             }
 
+            //6.
+
         }
 
         private void richTextBox1_MouseDown(object sender, MouseEventArgs e)
