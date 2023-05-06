@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MyTypographer
 {
@@ -16,52 +17,64 @@ namespace MyTypographer
         public Form1()
         {
             InitializeComponent();
+          
         }
-       
+
         private void button1_Click(object sender, EventArgs e)
         {
             var text = richTextBox1.Text;
 
-            // Нельзя писать подряд более одного пробела.
+            // 1.Нельзя писать подряд более одного пробела.
 
             text = Regex.Replace(text, @"\s{2,}", " ");
+            richTextBox2.Text = text;
 
-
-            // «"». В русском языке этик кавычек нет.
+            // 2.«"». В русском языке этик кавычек нет.
             // Вместо них нужно использовать кавычки «ёлочки».
             //Создаются они так: «Ёлочки»
-            
+
             if (richTextBox1.Text.Contains('"'))
             {
                 text = text.Replace('"', '«');
                 text = text.Replace('"', '»');
-               
+                richTextBox2.Text = text;
             }
-            else
-            {
-                return;
-            }
-            richTextBox2.Text = text;
-            // Символ «плюс - минус» задаётся так: ± ненужно использовать 
+
+            // 3.Символ «плюс - минус» задаётся так: ± ненужно использовать 
             //конструкции типа «(+,−)».
 
             if (richTextBox1.Text.Contains("+-"))
             {
                 text = text.Replace("+-", "± ");
+                richTextBox2.Text = text;
             }
-            else
+
+            //4.Везде где в тексте используется амперсанд «&», нужно вместо него писать &
+
+            if (richTextBox1.Text.Contains("&"))
             {
-                return;
+                text = text.Replace("&", "&");
+                richTextBox2.Text = text;
             }
-            
-            richTextBox2.Text = text;
-           
-            
+            // 5.слова Здравствуйте будут заменяться на Приветули)
+            if (richTextBox1.Text.Contains("здравствуйте") || richTextBox1.Text.Contains("Здравствуйте"))
+            {
+                text = text.Replace("здравствуйте", "приветули");
+                text = text.Replace("Здравствуйте", "Приветули");
+                richTextBox2.Text = text;
+            }
+
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        private void richTextBox1_MouseDown(object sender, MouseEventArgs e)
         {
-            
+            richTextBox1.Clear();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Clear();
+            richTextBox2.Clear();
         }
     }
 }
