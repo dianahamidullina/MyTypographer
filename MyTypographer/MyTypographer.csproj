@@ -86,5 +86,8 @@
   <ItemGroup>
     <None Include="Resources\forms-pinkish-green-blur.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tupo Vyaz Thin 100.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
