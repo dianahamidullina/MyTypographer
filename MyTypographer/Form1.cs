@@ -65,6 +65,8 @@ namespace MyTypographer
             }
 
             //6.
+           
+
 
         }
 
@@ -78,5 +80,7 @@ namespace MyTypographer
             richTextBox1.Clear();
             richTextBox2.Clear();
         }
+
+      
     }
 }
