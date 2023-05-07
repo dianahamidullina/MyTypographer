@@ -59,6 +59,7 @@ namespace MyTypographer
                 text = text.Replace("&", "&");
                 richTextBox2.Text = text;
             }
+            //Два своих правила :
             // 5.слова Здравствуйте будут заменяться на Приветули)
             if (richTextBox1.Text.Contains("здравствуйте") || richTextBox1.Text.Contains("Здравствуйте"))
             {
