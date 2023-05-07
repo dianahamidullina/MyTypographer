@@ -29,16 +29,19 @@ namespace MyTypographer
             text = Regex.Replace(text, @"\s{2,}", " ");
             richTextBox2.Text = text;
 
-            // 2.«"». В русском языке этик кавычек нет.
-            // Вместо них нужно использовать кавычки «ёлочки».
-            //Создаются они так: «Ёлочки»
+            
 
-            if (richTextBox1.Text.Contains('"'))
+
+            //2.Для указания степени квадрата и куба нужно использовать:
+            //² и ³ соответственно. Например: «x²» выведет в браузер «x²».
+            if (richTextBox2.Text.Contains("x^2") || richTextBox1.Text.Contains("x^3"))
             {
-                text = text.Replace('"', '«');
-                text = text.Replace('"', '»');
+                text = text.Replace("x^2", "x²");
+                text = text.Replace("X^3", "x³");
                 richTextBox2.Text = text;
             }
+            
+        
 
             // 3.Символ «плюс - минус» задаётся так: ± ненужно использовать 
             //конструкции типа «(+,−)».
@@ -64,10 +67,16 @@ namespace MyTypographer
                 richTextBox2.Text = text;
             }
 
-            //6.
+            //6.Слово люблю заменяется на символ сердечко
+            if(richTextBox1.Text.Contains("Люблю") || richTextBox1.Text.Contains("люблю"))
+            {
+                text = text.Replace("Люблю", "❤");
+                text = text.Replace("люблю", "❤");
+                richTextBox2.Text = text;
+            }
            
 
-
+            
         }
 
         private void richTextBox1_MouseDown(object sender, MouseEventArgs e)
@@ -81,9 +90,6 @@ namespace MyTypographer
             richTextBox2.Clear();
         }
 
-        private void richTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
