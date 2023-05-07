@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTypographer", "MyTypographer\MyTypographer.csproj", "{74368E12-9871-4A30-B555-04FC2D41005C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{A8927521-0D27-4B54-A880-E3854DFA8BF6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{74368E12-9871-4A30-B555-04FC2D41005C} = {74368E12-9871-4A30-B555-04FC2D41005C}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
