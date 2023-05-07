@@ -89,5 +89,23 @@
   <ItemGroup>
     <None Include="Resources\Tupo Vyaz Thin 100.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tupo Vyaz Thin 1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forms-multicolored-wavy-patch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forms-multicolored-wavy-patch-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forms-multicolored-wavy-patch-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hfvrf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hvh.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

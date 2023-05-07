@@ -73,6 +73,36 @@ namespace MyTypographer.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap forms_multicolored_wavy_patch {
+            get {
+                object obj = ResourceManager.GetObject("forms-multicolored-wavy-patch", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap forms_multicolored_wavy_patch_2 {
+            get {
+                object obj = ResourceManager.GetObject("forms-multicolored-wavy-patch-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap forms_multicolored_wavy_patch_3 {
+            get {
+                object obj = ResourceManager.GetObject("forms-multicolored-wavy-patch-3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap forms_pinkish_green_blur {
             get {
                 object obj = ResourceManager.GetObject("forms-pinkish-green-blur", resourceCulture);
@@ -83,9 +113,39 @@ namespace MyTypographer.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hfvrf {
+            get {
+                object obj = ResourceManager.GetObject("hfvrf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hvh {
+            get {
+                object obj = ResourceManager.GetObject("hvh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Tupo_Vyaz_Thin_100 {
             get {
                 object obj = ResourceManager.GetObject("Tupo Vyaz Thin 100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tupo_Vyaz_Thin_1001 {
+            get {
+                object obj = ResourceManager.GetObject("Tupo Vyaz Thin 1001", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
